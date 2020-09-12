@@ -30,8 +30,14 @@
             'height' : 30
         },
 
-        fruit : {
+        othersPlayers : {
             'color' : 'grey',
+            'width' : 30,
+            'height' : 30
+        },
+
+        fruit : {
+            'color' : 'black',
             'width' : 15,
             'height' : 15
         }
@@ -39,7 +45,16 @@
     }
 
 
-    alert(game.player['width'])
+    //alert(game.fruit['color'])
 
+
+    renderScreen()
+
+    function renderScreen(){
+        for(playeId in game.player){
+            const player = game.player[playeId]
+            
+        }
+    }
 
 </script>
