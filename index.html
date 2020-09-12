@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +11,35 @@
 
         <div class="canva">
 
-            <canvas></canvas>
+            <canvas width="300" height="300" id="screen"></canvas>
 
         </div>
     
     </section>
 </body>
 </html>
+
+<script>
+
+    const screen = document.getElementById('screen')
+
+    const game = {
+        player : {
+            'color' : 'yellow',
+            'width' : 30,
+            'height' : 30
+        },
+
+        fruit : {
+            'color' : 'grey',
+            'width' : 15,
+            'height' : 15
+        }
+
+    }
+
+
+    alert(game.player['width'])
+
+
+</script>
